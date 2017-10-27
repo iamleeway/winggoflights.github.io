@@ -10,4 +10,5 @@ credentials.js
 
 password.php
 
-.idea
+.idea/
+_site/
