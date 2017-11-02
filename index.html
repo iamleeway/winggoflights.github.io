@@ -254,8 +254,10 @@
                         .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
                     </style>
                     <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+                    <body>
                       <!--百度地图容器-->
                       <div style="position:relative;width:100%;height:50vw;border:#ccc solid 1px;" id="dituContent"></div>
+                    </body>
                     <script type="text/javascript">
                         //创建和初始化地图函数：
                         function initMap(){
@@ -276,7 +278,7 @@
                         //地图事件设置函数：
                         function setMapEvent(){
                             map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
-                            map.disableScrollWheelZoom();//禁用地图滚轮放大缩小，默认禁用(可不写)
+                            // map.disableScrollWheelZoom();//禁用地图滚轮放大缩小，默认禁用(可不写)
                             map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
                             map.enableKeyboard();//启用键盘上下左右键移动地图
                         }
